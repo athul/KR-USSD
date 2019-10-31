@@ -2,10 +2,11 @@ from django.db import models
 
 # Create your models here.
 class userModel(models.Model):
-    number=models.BigIntegerField()
-    location=models.CharField(max_length=200)
+    mob=models.BigIntegerField()
+    message=models.CharField(max_length=200)
     Name=models.CharField(max_length=100)
-    aff_people=models.IntegerField()
+    #message=models.CharField()
+    dist=models.IntegerField()
     
 
     class Meta:
